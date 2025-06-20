@@ -1,0 +1,17 @@
+/* src/layouts/MainLayout.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Fa in modo che il layout occupi l'intera altezza dello schermo */
+}
+
+.main-content {
+  flex-grow: 1; /* Permette al contenuto principale di espandersi e occupare lo spazio disponibile */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto; /* Centra il contenuto e aggiunge un po' di margine */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

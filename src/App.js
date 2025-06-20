@@ -1,30 +1,30 @@
 // src/App.js
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout'; // Importa il layout
 import Home from './pages/Home';
 import About from './pages/About';
 import WhyProject from './pages/WhyProject';
-// Importa qui i futuri componenti degli strumenti
+import ScheduleTablePage from './pages/ScheduleTablePage'; // Importa lo strumento orario
+import CalendarPage from './pages/CalendarPage';         // Importa lo strumento calendario
+
+import './App.css'; // Per stili globali dell'App
+// Non è più necessario importare Link in App.js perché è nel Header
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">Chi Siamo</Link></li>
-          <li><Link to="/why-project">Perché questo progetto</Link></li>
-          {/* Aggiungi qui i link per gli strumenti quando saranno pronti */}
-        </ul>
-      </nav>
-      <div className="container">
+      <MainLayout> {/* Avvolgi tutte le rotte nel MainLayout */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/why-project" element={<WhyProject />} />
-          {/* Aggiungi qui le rotte per gli strumenti */}
+          <Route path="/schedule" element={<ScheduleTablePage />} /> {/* Nuova rotta per l'orario */}
+          <Route path="/calendar" element={<CalendarPage />} />     {/* Nuova rotta per il calendario */}
+          {/* Qui andranno le rotte future */}
         </Routes>
-      </div>
+      </MainLayout>
     </Router>
   );
 }

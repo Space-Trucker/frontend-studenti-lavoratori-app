@@ -1,0 +1,132 @@
+/* src/pages/CalendarPage.css */
+
+.calendar-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-container h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.calendar-container p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.event-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding e bordo nella larghezza */
+  font-size: 1em;
+}
+
+.form-group textarea {
+  resize: vertical; /* Permette solo il ridimensionamento verticale */
+}
+
+.add-event-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.add-event-button:hover {
+  background-color: #0056b3;
+}
+
+.events-list-title {
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.no-events-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-item:last-child {
+  margin-bottom: 0;
+}
+
+.event-info strong {
+  color: #007bff;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.event-info p {
+  margin: 0;
+  color: #444;
+}
+
+.delete-event-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.delete-event-button:hover {
+  background-color: #c82333;
+}

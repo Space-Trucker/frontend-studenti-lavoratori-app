@@ -1,3 +1,5 @@
+/* src/index.css */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Sfondo leggermente grigio per l'intera app */
+  color: #333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Stili comuni per i contenuti delle pagine */
+.page-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.page-content h1 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.page-content h2 {
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.page-content p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.page-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.page-content li {
+  margin-bottom: 8px;
 }

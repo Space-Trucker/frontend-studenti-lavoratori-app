@@ -1,0 +1,80 @@
+/* src/pages/ScheduleTablePage.css */
+
+.schedule-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-container h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.schedule-container p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.schedule-table-responsive {
+  overflow-x: auto; /* Permette lo scrolling orizzontale su schermi piccoli */
+  margin-bottom: 20px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* Assicura che la tabella non sia troppo stretta */
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule-table th {
+  background-color: #eef;
+  font-weight: bold;
+  color: #333;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.schedule-table input[type="text"] {
+  width: calc(100% - 16px); /* Per un padding di 8px */
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding e bordo nella larghezza */
+}
+
+.schedule-table input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.schedule-cell {
+  min-width: 150px; /* Assicura spazio sufficiente per gli input */
+}
+
+.clear-button {
+  background-color: #dc3545; /* Rosso per l'azione di pulizia */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
