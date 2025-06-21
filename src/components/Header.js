@@ -15,6 +15,8 @@ function Header() {
           <li><Link to="/why-project">Perché questo progetto</Link></li>
           <li><Link to="/schedule">Orario Settimanale</Link></li>
           <li><Link to="/calendar">Date Importanti</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/Register">Registrati</Link></li>
         </ul>
       </nav>
     </header>
